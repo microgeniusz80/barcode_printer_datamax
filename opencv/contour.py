@@ -19,7 +19,10 @@ contours, hierarchy = cv2.findContours(
     cv2.CHAIN_APPROX_NONE
 )
 
-# ==== Step 4: draw contours on the original image ====
+# ==== Step 4: find the length of the contours ====
+print(f"Number of contours found: {len(contours)}")
+print(f"Hierarchy: {hierarchy}")
+print(contours[0])
 
 # ==== Display Images ====
 cv2.imshow("Original Image", image)
